@@ -19,7 +19,7 @@ namespace Daulis
                 Calc.UpdateParticleDynamics(particles, len);
                 Write.WriteToBuffer(buf, particles, len);
                 Write.OutputBuffer(buf);
-                Thread.Sleep(100);
+                Thread.Sleep(Fluids.FrameSleep);
             } while (Calc.UpdatePosition(particles, len));
         }
     }

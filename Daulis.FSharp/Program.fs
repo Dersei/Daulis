@@ -8,7 +8,7 @@ let updateDrawing pAndLen buf =
     |> Buffer.update buf
     |> Buffer.writeToConsole
 
-    Thread.Sleep 100
+    Thread.Sleep Fluids.FrameSleep
 
 [<EntryPoint>]
 let main args =
